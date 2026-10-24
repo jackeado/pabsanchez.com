@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pablo Sánchez · Diseñador gráfico</title>
+<meta name="description" content="Diseñador gráfico desde 2004: marca, empaque, redes, editorial y digital. Integra IA (Claude, ChatGPT, ElevenLabs) en su proceso creativo. Medellín, Colombia.">
+<meta name="author" content="Pablo Sánchez">
+<link rel="canonical" href="https://pabsanchez.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pablo Sánchez · Diseño gráfico como ejercicio espiritual">
+<meta property="og:description" content="Marca, empaque, redes, editorial y digital. Portafolio y hoja de vida.">
+<meta property="og:url" content="https://pabsanchez.com/">
+<meta property="og:image" content="https://pabsanchez.com/assets/img/og.jpg">
+<meta property="og:locale" content="es_CO">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#2B2BFF">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/inter-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/img/pablo-duo.webp" as="image">
+<link rel="stylesheet" href="assets/css/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Pablo Sánchez","jobTitle":"Diseñador gráfico","url":"https://pabsanchez.com/","email":"mailto:pabsanchez@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Medellín","addressCountry":"CO"},"sameAs":["https://www.linkedin.com/in/pablosanchezm/"]}</script>
+</head>
+<body>
+<div class="grid-lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<div class="curtain" id="curtain" aria-hidden="true"></div>
+
+<nav class="nav cols" aria-label="Principal">
+  <a class="logo" href="#inicio">Pabs</a>
+  <a class="lk" href="#inicio" data-nav="inicio">Inicio</a>
+  <a class="lk" href="#grafico" data-nav="grafico">Diseño Gráfico</a>
+  <a class="lk" href="#digital" data-nav="digital">Productos Digitales</a>
+  <a class="lk" href="#cv" data-nav="cv">Hoja de vida</a>
+  <span></span>
+  <div class="icons">
+    <a class="cvbtn" href="#cv">Ver CV</a>
+    <a class="ic" href="#favoritos" aria-label="Favoritos" id="favBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.8 4.5c2.1 0 3.6 1.2 5.2 3 1.6-1.8 3.1-3 5.2-3 3.8 0 5.9 3.9 4.4 7.3C19.5 16.4 12 21 12 21z"/></svg><span class="badge" id="favN">0</span></a>
+    <a class="ic" href="#carrito" aria-label="Carrito" id="cartBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h9.2a1 1 0 0 0 1-.8L20 8H6"/><circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/></svg><span class="badge" id="cartN">0</span></a>
+  </div>
+</nav>
+
+<main>
+<!-- INICIO -->
+<section class="view" data-view="inicio">
+  <div class="hero cols">
+    <div class="txt pad">
+      <h1 class="mega h1"><span class="l"><span>Diseño gráfico</span></span><span class="l"><span>como <em class="blue" style="font-style:normal">ejercicio</em></span></span><span class="l"><span class="blue">espiritual.</span></span></h1>
+      <p class="lead sub">Marca, empaque, redes, editorial y digital.</p>
+    </div>
+    <div class="photo" id="photo"><img src="assets/img/pablo-duo.webp" alt="Pablo Sánchez"><img class="color" id="colorImg" src="assets/img/pablo-color.webp" alt="" aria-hidden="true"></div>
+  </div>
+  <div class="sec">
+    <div class="cols label"><span class="eyebrow pad">Proyectos destacados</span></div>
+    <ul class="list" id="homeList"></ul>
+  </div>
+</section>
+
+<!-- CATEGORÍA GRÁFICO -->
+<section class="view" data-view="grafico">
+  <div class="cathead cols">
+    <h1 class="ttl mega h2 pad"><span class="l"><span>Diseño</span></span><span class="l"><span class="blue">Gráfico</span></span></h1>
+    <p class="intro lead pad">El diseño gráfico es el punto de encuentro entre el mensaje y quien lo recibe. Aquí están los proyectos creados para comunicar de forma clara, atractiva y estratégica: identidades, piezas impresas y contenido para redes.</p>
+  </div>
+  <div style="display:flex;align-items:center;flex-wrap:wrap">
+    <div class="chips" id="chips"></div><span class="count" id="count"></span>
+  </div>
+  <div class="shop cols" id="shopG"></div>
+</section>
+
+<!-- CATEGORÍA DIGITAL -->
+<section class="view" data-view="digital">
+  <div class="cathead cols">
+    <h1 class="ttl mega h2 pad"><span class="l"><span>Productos</span></span><span class="l"><span class="blue">Digitales</span></span></h1>
+    <p class="intro lead pad">Productos digitales diseñados con un enfoque centrado en el usuario y orientado a resultados: plataformas educativas, e-commerce, inmobiliaria y salud. Investigación, diseño de interacción, prototipado y trabajo con equipos.</p>
+  </div>
+  <div class="shop cols" id="shopD"></div>
+</section>
+
+<!-- FICHA -->
+<section class="view" data-view="p">
+  <div class="pd">
+    <div class="crumbs" id="crumbs"></div>
+    <div class="cols">
+      <div class="gal" id="pdGal"></div>
+      <aside class="info" id="pdInfo"></aside>
+    </div>
+    <div class="next cols" id="pdNext"></div>
+  </div>
+</section>
+
+<!-- CASO -->
+<section class="view" data-view="caso"><div id="caseRoot"></div></section>
+
+<!-- HOJA DE VIDA -->
+<section class="view" data-view="cv">
+  <div class="cvh cols">
+    <h1 class="name mega"><span class="l"><span>Pablo</span></span><span class="l"><span class="blue">Sánchez</span></span></h1>
+    <div class="ph"><img src="assets/img/pablo-duo.webp" alt="Pablo Sánchez"></div>
+    <div class="role"><span>Diseñador gráfico · desde 2004</span><span style="color:var(--muted)">Medellín, Colombia</span><button class="dl" id="dlBtn">Descargar hoja de vida ↓</button></div>
+  </div>
+  <div class="cvb cols">
+    <div class="cv-sidewrap" id="sideWrap"><aside class="cv-side" id="cvSide">
+      <h4>Contacto</h4><p><a href="mailto:pabsanchez@gmail.com">pabsanchez@gmail.com</a><br><a href="https://www.linkedin.com/in/pablosanchezm/" target="_blank" rel="noopener">linkedin.com/in/pablosanchezm</a><br>pabsanchez.com</p>
+      <h4>Idiomas</h4><p>Español · nativo<br>Inglés · B2</p>
+      <h4>Herramientas</h4><div class="pills"><span>Figma</span><span>Photoshop</span><span>Illustrator</span><span>InDesign</span><span>After Effects</span><span>Premiere</span><span>Lightroom</span><span>WordPress</span><span>HTML · CSS · JS</span></div>
+      <h4>Inteligencia artificial</h4><div class="pills ia"><span>Claude</span><span>ChatGPT</span><span>ElevenLabs</span></div>
+      <h4>Habilidades</h4><p>Creatividad · Liderazgo · Pensamiento crítico · Trabajo en equipo · Flexibilidad</p>
+      <h4>Intereses</h4><p>Música · Escritura · Lectura · Fotografía · Senderismo</p>
+    </aside></div>
+    <div class="cv-main">
+      <h3>Sobre mí</h3>
+      <div class="about lead">
+        <p>Soy diseñador gráfico y combino diseño y tecnología para crear piezas visuales claras, funcionales y atractivas. Me muevo entre marca, empaque, redes, editorial y digital, apoyando en diferentes frentes a mi equipo de trabajo y manteniendo la unidad en las comunicaciones.</p>
+        <p>Hoy sumo herramientas de IA (Claude, ChatGPT, ElevenLabs) para explorar ideas y producir con más agilidad micrositios, landing pages y videos, entre otras piezas, lo que aumenta la capacidad de mi equipo. Estas herramientas son parte de mi proceso, pero la dirección creativa sigue siendo mía.</p>
+      </div>
+      <h3>Experiencia</h3>
+      <div id="stages"></div>
+    </div>
+    <div class="cv-edu"><ul class="edu" id="edu"></ul></div>
+  </div>
+</section>
+
+<!-- FAVORITOS -->
+<section class="view" data-view="favoritos">
+  <div class="cart cols"><h1 class="ttl mega h2"><span class="l"><span>Favoritos</span></span></h1></div>
+  <div class="shop cols" id="favGrid" style="margin-top:-50px"></div>
+</section>
+
+<!-- CARRITO -->
+<section class="view" data-view="carrito">
+  <div class="cart cols">
+    <h1 class="ttl mega h2"><span class="l"><span>Tu <span class="blue">pedido</span></span></span></h1>
+    <div class="items" id="items"></div>
+    <aside class="chk" id="chk">
+      <div class="box">
+        <h4>Enviar solicitud</h4>
+        <p>No hay pago. Me llega tu lista y te respondo con una propuesta.</p>
+        <form id="form">
+          <label for="fn">Nombre</label><input id="fn" required autocomplete="name">
+          <label for="fe">Correo</label><input id="fe" type="email" required autocomplete="email">
+          <label for="fc">Empresa (opcional)</label><input id="fc" autocomplete="organization">
+          <label for="ft">¿Para cuándo?</label><select id="ft"><option>Sin prisa</option><option>Este mes</option><option>Lo antes posible</option></select>
+          <label for="fm">Cuéntame un poco</label><textarea id="fm"></textarea>
+          <button class="send" type="submit">Enviar pedido <span>→</span></button>
+        </form>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ENVIADO -->
+<section class="view" data-view="enviado">
+  <div class="ok-hero">
+    <div class="check"><svg viewBox="0 0 40 40"><path d="M10 21l7 7 14-15"/></svg></div>
+    <h1 class="mega"><span class="l"><span>¡Pedido</span></span><span class="l"><span class="blue">enviado!</span></span></h1>
+    <p class="lead" id="okMsg" style="margin:20px 0 30px;color:var(--muted);max-width:32em">Gracias. Me llegó tu pedido y te escribo pronto con una propuesta.</p>
+    <a class="cta" href="#grafico">Seguir viendo proyectos →</a>
+  </div>
+</section>
+</main>
+
+<footer class="foot cols">
+  <div class="big"><a href="mailto:pabsanchez@gmail.com">pabsanchez@gmail.com</a></div>
+  <div class="links"><a href="https://www.linkedin.com/in/pablosanchezm/" target="_blank" rel="noopener">LinkedIn</a><a href="#cv">Hoja de vida</a></div>
+  <small>© 2026 Pablo Sánchez · Medellín, Colombia</small>
+</footer>
+
+<dialog id="ats">
+  <div class="md">
+    <h3>Antes de descargar</h3>
+    <p>La hoja de vida que descargas está pensada para los <b>sistemas automáticos de selección (ATS)</b> que leen los CV con inteligencia artificial. Por eso su diseño cambia: una columna, títulos estándar y texto limpio para que se lea bien.</p>
+    <p>El contenido es el mismo que ves aquí.</p>
+    <div class="row"><a class="pri btnl" id="atsPdf" href="assets/cv/Pablo-Sanchez-Hoja-de-vida.pdf" download>Descargar PDF</a><a class="btnl" id="atsDoc" href="assets/cv/Pablo-Sanchez-Hoja-de-vida.docx" download>Descargar Word</a><button id="atsNo">Cancelar</button></div>
+  </div>
+</dialog>
+
+<div class="cdot" id="cdot"></div>
+<div class="preview" id="preview"><img alt=""></div>
+<div class="toast" id="toast" role="status"><i></i><span></span></div>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
