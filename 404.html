@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Página no encontrada · Pablo Sánchez</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/css/site.css">
+<style>
+.e404{min-height:calc(100vh - 64px);display:flex;flex-direction:column;justify-content:center;padding:40px 0 60px}
+.digits{display:flex;align-items:center;gap:clamp(8px,2vw,28px);padding:0 14px;line-height:.8}
+.digits .d{font-weight:900;letter-spacing:-.07em;font-size:clamp(140px,28vw,440px);display:inline-block;transform:translateY(110%);animation:up 1s cubic-bezier(.2,.8,.2,1) forwards}
+.digits .d:last-child{animation-delay:.16s}
+.zero{position:relative;width:clamp(120px,22vw,350px);aspect-ratio:1;border-radius:50%;background:var(--blue);overflow:hidden;flex:none;transform:scale(0);animation:pop .9s .08s cubic-bezier(.3,1.4,.5,1) forwards}
+.zero img{position:absolute;left:50%;top:6%;width:118%;transform:translateX(-50%);filter:grayscale(1) brightness(1.6) contrast(1.1);mix-blend-mode:multiply;pointer-events:none;transition:transform .25s ease-out}
+.wrap-d{overflow:hidden;display:block;padding-bottom:.04em}
+@keyframes up{to{transform:none}}
+@keyframes pop{to{transform:scale(1)}}
+.msg{display:grid;grid-template-columns:repeat(var(--cols),1fr);margin-top:clamp(30px,5vw,60px);opacity:0;animation:fadein .8s .6s forwards}
+.msg h1{grid-column:1/5;padding:0 14px;font-weight:900;font-size:clamp(30px,3.6vw,56px);letter-spacing:-.05em;line-height:1}
+.msg p{grid-column:5/9;padding:0 14px;align-self:end;font-size:clamp(16px,1.4vw,19px);line-height:1.55;color:var(--muted)}
+@keyframes fadein{to{opacity:1}}
+.go{list-style:none;border-top:1px solid var(--line);margin-top:clamp(40px,6vw,80px)}
+.go li{border-bottom:1px solid var(--line)}
+.go a{display:grid;grid-template-columns:repeat(var(--cols),1fr);align-items:center}
+.go .t{grid-column:1/7;padding:6px 14px;font-weight:900;font-size:clamp(30px,4.4vw,72px);letter-spacing:-.06em;line-height:1.05;transition:transform .5s cubic-bezier(.2,.8,.2,1),color .3s}
+.go .k{grid-column:7/9;padding:0 14px;font-size:13px;font-weight:600;color:var(--muted);text-align:right}
+.go a:hover .t{transform:translateX(24px);color:var(--blue)}
+@media (max-width:860px){.msg h1,.msg p{grid-column:1/5}.msg p{margin-top:14px}.go .t{grid-column:1/5;font-size:clamp(28px,8vw,40px)}.go .k{display:none}}
+@media (prefers-reduced-motion:reduce){.digits .d,.zero,.msg{animation:none;transform:none;opacity:1}}
+</style>
+</head>
+<body>
+<div class="grid-lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<nav class="nav cols" aria-label="Principal">
+  <a class="logo" href="/">Pabs</a>
+  <a class="lk" href="/#inicio">Inicio</a>
+  <a class="lk" href="/#grafico">Diseño Gráfico</a>
+  <a class="lk" href="/#digital">Productos Digitales</a>
+  <a class="lk" href="/#cv">Hoja de vida</a>
+  <span></span>
+  <div class="icons"><a class="cvbtn" href="/#cv">Ver CV</a></div>
+</nav>
+<main>
+  <section class="e404">
+    <div class="digits" aria-label="404">
+      <span class="wrap-d"><span class="d">4</span></span>
+      <span class="zero" id="zero" aria-hidden="true"><img src="/assets/img/pablo-duo.webp" alt=""></span>
+      <span class="wrap-d"><span class="d">4</span></span>
+    </div>
+    <div class="msg">
+      <h1>Esta página se quedó en <span class="blue">boceto.</span></h1>
+      <p>El enlace no existe o cambió de lugar. El resto del trabajo sigue aquí: elige por dónde seguir.</p>
+    </div>
+    <ul class="go">
+      <li><a href="/#grafico"><span class="t">Diseño Gráfico →</span><span class="k">Identidad · empaque · editorial · redes</span></a></li>
+      <li><a href="/#digital"><span class="t">Productos Digitales →</span><span class="k">UX/UI · casos</span></a></li>
+      <li><a href="/#cv"><span class="t">Hoja de vida →</span><span class="k">Experiencia desde 2004</span></a></li>
+    </ul>
+  </section>
+</main>
+<footer class="foot cols">
+  <div class="big"><a href="mailto:pabsanchez@gmail.com">pabsanchez@gmail.com</a></div>
+  <div class="links"><a href="https://www.linkedin.com/in/pablosanchezm/" target="_blank" rel="noopener">LinkedIn</a><a href="/#cv">Hoja de vida</a></div>
+  <small>© 2026 Pablo Sánchez · Medellín, Colombia</small>
+</footer>
+<script>
+(()=>{const z=document.getElementById('zero'),im=z.querySelector('img');
+if(matchMedia('(pointer:fine)').matches&&!matchMedia('(prefers-reduced-motion:reduce)').matches){
+addEventListener('pointermove',e=>{const b=z.getBoundingClientRect(),dx=(e.clientX-(b.left+b.width/2))/innerWidth,dy=(e.clientY-(b.top+b.height/2))/innerHeight;im.style.transform=`translate(calc(-50% + ${dx*-30}px),${dy*-20}px)`})}})();
+</script>
+</body>
+</html>
